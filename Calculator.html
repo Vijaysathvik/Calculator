@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        #container{
+            height: 300px; width: 200px;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #textbox{
+            height:40px; width:80%;
+            margin: 5px;
+        }
+        .box{
+            height: 25px; width: 50px;
+            text-align: center;
+            margin: 5px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <textarea id="textbox"></textarea>
+    <button class="box" onclick="string=' '; document.querySelector('#textbox').value= string ">C</button >
+    <button class="box" onclick="string+='1'; document.querySelector('#textbox').value= string ">1</button >
+    <button class="box" onclick="string+='2'; document.querySelector('#textbox').value= string ">2</button >
+    <button class="box" onclick="string+='+'; document.querySelector('#textbox').value= string ">+</button >
+    <button class="box" onclick="string+='3'; document.querySelector('#textbox').value= string ">3</button >
+    <button class="box" onclick="string+='4'; document.querySelector('#textbox').value= string ">4</button >
+    <button class="box" onclick="string+='-'; document.querySelector('#textbox').value= string ">-</button >
+    <button class="box" onclick="string+='5'; document.querySelector('#textbox').value= string ">5</button >
+    <button class="box" onclick="string+='6'; document.querySelector('#textbox').value= string ">6</button >
+    <button class="box" onclick="string+='*'; document.querySelector('#textbox').value= string ">*</button >
+    <button class="box" onclick="string+='7'; document.querySelector('#textbox').value= string ">7</button >
+    <button class="box" onclick="string+='8'; document.querySelector('#textbox').value= string ">8</button >
+    <button class="box" onclick="string+='/'; document.querySelector('#textbox').value= string ">/</button >
+    <button class="box" onclick=" document.querySelector('#textbox').value= eval(string) ">=</button >
+    <button class="box" onclick="string+='9'; document.querySelector('#textbox').value= string ">9</button >
+    <button  class="box" onclick="string+='0'; document.querySelector('#textbox').value= string ">0</button >
+    <button  class="box" onclick="string+='.'; document.querySelector('#textbox').value= string ">.</button >
+    </div>
+        <script>
+    let string='';
+    </script>
+</body>
+</html>
